@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Zomboid Mod List: 72 mods</title>
+<meta name="description" content="Project Zomboid load order, exported Nov 2, 2026. ZombieBuddy, Viewpoint, Project Viewpoint: General Mod Map Fix and 69 more. Open to see every mod with its Steam Workshop link, compare with your list, or copy an import code.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mod List Exporter">
+<meta property="og:title" content="Project Zomboid Mod List: 72 mods">
+<meta property="og:description" content="Project Zomboid load order, exported Nov 2, 2026. ZombieBuddy, Viewpoint, Project Viewpoint: General Mod Map Fix and 69 more. Open to see every mod with its Steam Workshop link, compare with your list, or copy an import code.">
+<meta name="theme-color" content="#c9a227">
+<style>
+:root{--bg:#141414;--card:#1e1e1e;--card2:#252525;--line:#2c2c2c;--text:#e8e6e3;--muted:#9a968f;--accent:#c9a227;--link:#7fb3ff;
+  --ok:#7fc77f;--ok-bg:#1d2b1d;--miss:#ef8a80;--miss-bg:#331d1b;--extra:#7fb3ff;--extra-bg:#1b2533;--move:#e5c06a;--move-bg:#332a17}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,"Segoe UI",Roboto,sans-serif}
+main{max-width:900px;margin:0 auto;padding:32px 16px 64px}
+h1{margin:0 0 4px;font-size:26px}
+h2{margin:0 0 8px;font-size:17px;font-weight:600}
+.sub{color:var(--muted);margin:0 0 16px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+button{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button.on{border-color:var(--accent);color:var(--accent)}
+ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+li{display:flex;gap:14px;align-items:baseline;padding:10px 14px;background:var(--card);border-top:1px solid var(--line)}
+li:first-child{border-top:0}
+.n{color:var(--accent);font-variant-numeric:tabular-nums;min-width:2.5em;text-align:right;font-weight:600}
+.body{flex:1;min-width:0}
+.name a{color:var(--link);text-decoration:none;font-weight:600}
+.name a:hover{text-decoration:underline}
+.name span{font-weight:600}
+.meta{color:var(--muted);font-size:13px;word-break:break-all}
+.tag{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 6px;margin-left:6px}
+details{margin-top:28px}
+summary{cursor:pointer;color:var(--muted)}
+textarea{width:100%;min-height:70px;margin-top:8px;background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:8px;font:13px/1.4 Consolas,monospace}
+label{display:block;margin-top:12px;color:var(--muted);font-size:13px}
+.panel{display:none;margin:0 0 24px;padding:16px;border:1px solid var(--line);border-radius:8px;background:#181818}
+.panel.open{display:block}
+.part{margin-top:12px}
+.part .head,.rowhead{display:flex;justify-content:space-between;align-items:center;gap:8px;color:var(--muted);font-size:13px}
+.namebar{margin:0 0 20px}
+.namebar label{margin:0 0 6px}
+.namerow{display:flex;gap:8px;flex-wrap:wrap}
+.namerow input{flex:1;min-width:200px;background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font:inherit;font-size:14px}
+.namerow input:focus{outline:none;border-color:var(--accent)}
+.empty{padding:24px;border:1px dashed var(--line);border-radius:8px;color:var(--muted)}
+.drop{border:1px dashed #444;border-radius:8px;padding:10px;transition:border-color .15s}
+.drop.over{border-color:var(--accent)}
+.drop textarea{margin-top:0;min-height:90px;border:0;background:transparent}
+.hint{color:var(--muted);font-size:13px;margin:6px 0 0}
+.err{color:var(--miss);font-size:13px;margin:8px 0 0}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:16px 0}
+.stat{background:var(--card);border-radius:8px;padding:10px 12px}
+.stat b{display:block;font-size:22px;font-weight:600}
+.stat span{font-size:12px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.cl{border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.cl .h{padding:8px 12px;background:var(--card2);font-size:13px;color:var(--muted)}
+.cr{display:flex;align-items:center;gap:8px;padding:6px 12px;border-top:1px solid var(--line);font-size:13px;background:var(--card)}
+.cr .i{color:var(--muted);min-width:2em;text-align:right;font-variant-numeric:tabular-nums}
+.cr .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cr a{color:var(--link);text-decoration:none}
+.pill{font-size:11px;padding:1px 8px;border-radius:4px;white-space:nowrap}
+.p-ok{background:var(--ok-bg);color:var(--ok)}
+.p-miss{background:var(--miss-bg);color:var(--miss)}
+.p-extra{background:var(--extra-bg);color:var(--extra)}
+.p-move{background:var(--move-bg);color:var(--move)}
+.sec{margin-top:16px}
+.sec ul{margin:6px 0 0;padding-left:20px}
+.sec li{display:list-item;background:none;border:0;padding:2px 0;font-size:14px}
+.sec li a{color:var(--link);text-decoration:none}
+.c-miss{color:var(--miss)}.c-extra{color:var(--extra)}.c-move{color:var(--move)}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.cols{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<script>window.MODLIST = {"exported":"2026-11-02 12:09","mods":[{"order":1,"id":"ZombieBuddy","name":"ZombieBuddy","workshopId":"3619862853","author":"Zed","version":null},{"order":2,"id":"Viewpoint","name":"Viewpoint","workshopId":"3809306528","author":null,"version":"0.1.6.1"},{"order":3,"id":"PV-modmapbakefix","name":"Project Viewpoint: General Mod Map Fix","workshopId":"3813929757","author":"PV-modmapbakefix contributors","version":"0.1.2"},{"order":4,"id":"VandalismCore","name":"Vandalism - Multiplayer Core","workshopId":"3818587612","author":"Azakaela Redfire","version":"0.5.5-alpha"},{"order":5,"id":"ViewpointVandalism","name":"Vandalism","workshopId":"3818587612","author":"Azakaela Redfire","version":"0.5.5-alpha"},{"order":6,"id":"ProjectViewpointFeatureFixes","name":"Project Viewpoint Feature Upgrades and Fixes","workshopId":"3826337265","author":"Midgar","version":"1.1.20-litfog.1"},{"order":7,"id":"ViewpointExtendedSupport","name":"Viewpoint Extended Support","workshopId":"3812978679","author":"Maeiro","version":"0.4.50"},{"order":8,"id":"ProjectViewpointQOL","name":"Project Viewpoint QOL","workshopId":"3811256204","author":null,"version":null},{"order":9,"id":"HottieZPosterPack","name":"Hottie-Z Collectible Poster Pack [B42]","workshopId":"3792134082","author":null,"version":"42.20.41"},{"order":10,"id":"davadrive","name":"Controller \u003c-> keyboard switching","workshopId":"2916485901","author":null,"version":null},{"order":11,"id":"aparosa_pz3dMinimap","name":"Project Viewpoint Minimap (PZ3D Minimap) [B42]","workshopId":"3810179295","author":"APAROSA","version":"1.7.20"},{"order":12,"id":"ViewpointRoofs","name":"Viewpoint - Roofs (WIP)","workshopId":"3817294484","author":"Timidis1","version":"0.9.0"},{"order":13,"id":"ProjectViewpointNearVegetation","name":"Project Viewpoint: TREE in 3D","workshopId":"3813172420","author":"Project Viewpoint Near Vegetation contributors","version":"0.3.15"},{"order":14,"id":"VPSmooth3D_Plants","name":"Viewpoint Smooth 3D: bushes and potted plants","workshopId":"3826458381","author":null,"version":"0.5.0"},{"order":15,"id":"VPSmooth3D_Grass","name":"Viewpoint Smooth 3D: grass and small plants","workshopId":"3826458381","author":null,"version":"0.5.0"},{"order":16,"id":"WallVines3D","name":"Wall Vines 3D (Viewpoint)","workshopId":"3828883205","author":"Eugenio","version":"1.0.0"},{"order":17,"id":"PZVoxelStudioViewpoint","name":"6282 3D models for Viewpoint [sour_kisel]","workshopId":"3810302175","author":"sour_kisel","version":"1.0"},{"order":18,"id":"ViewpointFences","name":"Viewpoint 3D Fences and Gates - Beta","workshopId":"3813723091","author":"Jordan","version":"0.3.8"},{"order":19,"id":"ProjectViewpointShelves","name":"Project Viewpoint: KK's Shelves in 3D","workshopId":"3815931973","author":"Kauno","version":"0.4.7"},{"order":20,"id":"Railings3D","name":"Railings 3D (Viewpoint)","workshopId":"3825682908","author":"Eugenio","version":"1.1.0"},{"order":21,"id":"WallTextureFixForViewpoint","name":"Wall Texture Fix for Viewpoint","workshopId":"3820609079","author":"biggles","version":"0.3.01"},{"order":22,"id":"ViewpointDoor","name":"Viewpoint - Door Fix","workshopId":"3812151347","author":"GamerKreep","version":"1.0"},{"order":23,"id":"VisibleDoorDamagebyYurik","name":"Visible Door Damage [B42 MP]","workshopId":"3799596085","author":"Yurik","version":"1.1.0"},{"order":24,"id":"BasileDoors3D","name":"Project Viewpoint - 3D Doors, Gates & Garages","workshopId":"3818859807","author":"Basile","version":"0.2.8"},{"order":25,"id":"DGVWindows3D","name":"3D Windows for Viewpoint [B42] byDGV","workshopId":"3820833348","author":"DGV","version":null},{"order":26,"id":"DGVCurtains","name":"3D Curtains & Blinds for Viewpoint [B42] byDGV","workshopId":"3818873810","author":"DGV","version":null},{"order":27,"id":"ViewpointVisualFixes","name":"ViewpointVisualFixes","workshopId":"3821308495","author":null,"version":"0.8.0"},{"order":28,"id":"RealisticDoorImpacts","name":"Project Viewpoint - Actual Door Rattling","workshopId":"3820462383","author":"sladed","version":"0.1.6-alpha"},{"order":29,"id":"GrassierGrassViewpoint","name":"Grassier Grass (Viewpoint)","workshopId":"3818853354","author":"Leonardoinc22","version":"0.1.4"},{"order":30,"id":"ProjectViewpointKI5VehiclePartsFix","name":"Project Viewpoint - KI5 Vehicle Parts Fix","workshopId":"3815019204","author":"astan","version":"1.3"},{"order":31,"id":"ViewpointVehicleShellFix","name":"Viewpoint - Vehicle Shell Fix","workshopId":"3819801335","author":"Community compatibility patch","version":"1.1"},{"order":32,"id":"ViewpointMilitaryVehicleCompat","name":"Viewpoint - Papa_Chad Vehicle Compatibility","workshopId":"3812659488","author":null,"version":"1.3.0"},{"order":33,"id":"ViewpointCropVisibility","name":"Viewpoint - Crop Visibility Fix","workshopId":"3812659173","author":null,"version":"1.0.0"},{"order":34,"id":"ViewpointButcherHookCompat","name":"Viewpoint - Butcher Hook 3D Compatibility","workshopId":"3812723539","author":null,"version":"1.1.0"},{"order":35,"id":"ViewpointBuildingAlignment","name":"Viewpoint - Building Alignment Fix","workshopId":"3812932905","author":null,"version":"1.0.0"},{"order":36,"id":"ViewpointWorkstations3D","name":"Viewpoint's Workstations Overhaul","workshopId":"3828755546","author":null,"version":"0.140.13"},{"order":37,"id":"ViewpointLogWalls","name":"Viewpoint - 3D Construction","workshopId":"3820190473","author":null,"version":"0.8.0-rc1"},{"order":38,"id":"LevelFurniture","name":"Level Furniture (Viewpoint)","workshopId":"3823984682","author":"Eugenio","version":"1.0.0"},{"order":39,"id":"ProjectViewpointADS","name":"Project Viewpoint: Recoil & ADS (Viewpoint add-on)","workshopId":"3812612054","author":"Matthew","version":"1.9.1"},{"order":40,"id":"ViewpointBodycam","name":"Viewpoint Immersive Camera Motion","workshopId":"3818432217","author":"ChippinIn","version":"0.1.17"},{"order":41,"id":"ViewpointTrueBallistics","name":"Viewpoint True Ballistics","workshopId":"3812864848","author":"Matthew","version":"1.4.6"},{"order":42,"id":"ViewpointAdvancedThrowables","name":"Viewpoint - Advanced Throwables","workshopId":"3813194971","author":"Matthew","version":"1.4.1"},{"order":43,"id":"ViewpointAdvancedMovement","name":"Viewpoint Advanced Movement","workshopId":"3812702301","author":null,"version":"1.4.18"},{"order":44,"id":"VisceralViewpoint","name":"Visceral (Viewpoint)","workshopId":"3820965001","author":"Leonardoinc22","version":"1.3.0"},{"order":45,"id":"ViewpointBloodFX","name":"Blood FX for Viewpoint","workshopId":"3811472160","author":"sour_kisel","version":"1.5.2"},{"order":46,"id":"ViewpointBloodFXAddon","name":"Blood FX for Viewpoint - Fixes","workshopId":"3813801053","author":null,"version":"1.0"},{"order":47,"id":"ViewpointForaging","name":"Viewpoint Foraging","workshopId":"3814994364","author":null,"version":"0.3.0"},{"order":48,"id":"FishingView","name":"Viewpoint Fishing","workshopId":"3814560827","author":null,"version":"1.0.45"},{"order":49,"id":"ViewpointWorkingTVs","name":"Viewpoint - 3D Working TVs & Radios","workshopId":"3821610732","author":"ajlittle","version":"1.0.0"},{"order":50,"id":"ViewpointInteriors","name":"Viewpoint Vehicle Interiors","workshopId":"3826550325","author":"gustavobr120","version":"1.0.1"},{"order":51,"id":"ViewpointLivingProps","name":"Viewpoint: Living Props","workshopId":"3816442251","author":null,"version":"1.0.3"},{"order":52,"id":"ViewpointPlacementFix","name":"Viewpoint Placement Fix","workshopId":"3816521966","author":null,"version":"0.2.7"},{"order":53,"id":"isometricnomore","name":"Project Viewpoint - Isometric No More","workshopId":"3819166046","author":null,"version":"0.1.23"},{"order":54,"id":"ViewpointLight","name":"Viewpoint - Light Fix","workshopId":"3811344119","author":"GamerKreep","version":"1.4.7"},{"order":55,"id":"RoadHeadlightsLocal","name":"Viewpoint Road Lights [B42]","workshopId":"3825697513","author":null,"version":"0.3.1"},{"order":56,"id":"Halcyon","name":"Halcyon","workshopId":"3816312077","author":"you","version":"0.2.24"},{"order":57,"id":"DeadwoodShaders","name":"Deadwood-Shaders","workshopId":"3818656834","author":"Artmines","version":"1.0.9"},{"order":58,"id":"MitypointViewpointShader","name":"Mitypoint","workshopId":"3819221828","author":"Mityzuk / Mitypoint","version":"0.3.36.3"},{"order":59,"id":"QuietLightAssets","name":"Nobel Shaders","workshopId":"3816746100","author":null,"version":"0.2.6"},{"order":60,"id":"ViewpointTrueWeathers","name":"Project Viewpoint: True Weathers & Lighting","workshopId":"3813908957","author":"Matthew","version":"3.21.4"},{"order":61,"id":"Redraw","name":"Redraw (Viewpoint shader pack)","workshopId":"3818548144","author":"NotSoHere","version":"2.0.0"},{"order":62,"id":"ViewpointUplink","name":"Viewpoint Uplink","workshopId":"3821712511","author":"Pajamas","version":"0.4.1"},{"order":63,"id":"WornLens","name":"Worn Lens","workshopId":"3823573829","author":"Worn Lens","version":"1.1.0"},{"order":64,"id":"WastelandShaders","name":"Wasteland Shaders (Viewpoint)","workshopId":"3820467974","author":"Bombaclat server","version":"1.0.0"},{"order":65,"id":"HollowLightShaders","name":"Hollow Light (Viewpoint shader pack)","workshopId":"3821721515","author":"Pajamas","version":"1.47"},{"order":66,"id":"ViewpointDeepWater","name":"Viewpoint Simply Real Water","workshopId":"3829002754","author":"Grim Hiker","version":null},{"order":67,"id":"CityscapeViewpointMaps","name":"Cityscape Viewpoint Maps","workshopId":"3826608236","author":null,"version":"0.2.0"},{"order":68,"id":"ProjectViewpointQOLAdditionalFeatures","name":"Project Viewpoint QOL Additional Features","workshopId":"3811256204","author":null,"version":null},{"order":69,"id":"ProjectViewpointQOLControllerSupport","name":"Project Viewpoint QOL Controller Support","workshopId":"3811256204","author":null,"version":null},{"order":70,"id":"ProjectViewpointStars","name":"Project Viewpoint: Kentucky Nights (Beta)","workshopId":"3821241473","author":"bw054","version":"0.1.2"},{"order":71,"id":"ModLoadOrderSorter_b42","name":"Mod Load Order Sorter [b42]","workshopId":"3423660713","author":"REfRigERatoR","version":null},{"order":72,"id":"ModListExporter","name":"Mod List Exporter","workshopId":null,"author":"ComfyPlacebo","version":null}],"title":""};</script>
+<main id="app">
+  <h1>Project Zomboid Mod List</h1>
+  <p class="sub" id="sub">Loading...</p>
+</main>
+<script>
+// Mod List Exporter writes modlist_data.txt next to this page (window.MODLIST = {...}).
+// Depending on how the game resolves the mod folder it may land one level up or down,
+// so try the likely spots in order and use the first one that loads. A downloaded
+// ModList.html has the list built in instead, so it works anywhere it's opened.
+var CANDIDATES = [
+  "modlist_data.txt", "../modlist_data.txt",
+  "42/modlist_data.txt", "common/modlist_data.txt",
+  "../42/modlist_data.txt", "../common/modlist_data.txt"
+];
+var WS = "https://steamcommunity.com/sharedfiles/filedetails/?id=";
+var PAGE_SOURCE = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+
+function esc(s){
+  return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];
+  });
+}
+function $(id){ return document.getElementById(id); }
+
+// ------------------------------------------------------------------ list
+
+function renderList(data){
+  var mods = data.mods || [];
+  var rows = [], modIds = [], wids = [], seen = {};
+  mods.forEach(function(m){
+    var name;
+    if (m.workshopId) {
+      name = '<a href="' + WS + m.workshopId + '" target="_blank" rel="noopener">' + esc(m.name) + '</a>';
+      if (!seen[m.workshopId]) { seen[m.workshopId] = 1; wids.push(m.workshopId); }
+    } else {
+      name = '<span>' + esc(m.name) + '</span><span class="tag">local, no Workshop page</span>';
+    }
+    modIds.push("\\" + m.id);
+    rows.push('<li><span class="n">' + m.order + '</span><div class="body"><div class="name">' + name +
+      '</div><div class="meta">' +
+      (m.author ? 'by ' + esc(m.author) + ' &middot; ' : '') +
+      (m.version ? 'v' + esc(String(m.version).replace(/^v/i, '')) + ' &middot; ' : '') +
+      'Mod ID: ' + esc(m.id) +
+      (m.workshopId ? ' &middot; Workshop ID: ' + esc(m.workshopId) : '') + '</div></div></li>');
+  });
+  return {
+    sub: mods.length + ' mods in load order' + (data.exported ? ' &middot; exported ' + esc(data.exported) : ''),
+    list: '<ol>' + rows.join('') + '</ol>',
+    config: '<details><summary>Server config lines</summary>' +
+      '<label>Mods=</label><textarea readonly>Mods=' + esc(modIds.join(';')) + '</textarea>' +
+      '<label>WorkshopItems=</label><textarea readonly>WorkshopItems=' + esc(wids.join(';')) + '</textarea></details>'
+  };
+}
+
+// --------------------------------------------------------------- copying
+
+function copyText(text, btn, ta, label){
+  label = label || btn.textContent;
+  function done(){ btn.textContent = "Copied"; setTimeout(function(){ btn.textContent = label; }, 1500); }
+  function fallback(){
+    var t = ta;
+    if (!t) { t = document.createElement("textarea"); t.value = text; document.body.appendChild(t); }
+    t.select(); document.execCommand("copy");
+    if (!ta) t.remove();
+    done();
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback);
+  else fallback();
+}
+
+// Import code: what the in-game Import button reads from the clipboard.
+//   PZMODLIST 1
+//   exported=<date>
+//   <workshopId>|<modId>|<name>     (one per mod, in load order)
+function importCode(data){
+  var lines = ["PZMODLIST 1"];
+  if (data.exported) lines.push("exported=" + data.exported);
+  (data.mods || []).forEach(function(m){
+    lines.push((m.workshopId || "") + "|" + m.id + "|" + String(m.name || "").replace(/[|\r\n]+/g, " "));
+  });
+  return lines.join("\n") + "\n";
+}
+
+// Discord: [Name](<url>) = clickable name, no preview card. 2000 chars per message.
+var DISCORD_LIMIT = 1900;
+function discordEscape(s){ return String(s == null ? "" : s).replace(/([\[\]*_~`|\\>])/g, "\\$1"); }
+function discordParts(data){
+  var mods = data.mods || [];
+  var lines = mods.map(function(m){
+    return m.workshopId
+      ? m.order + ". [" + discordEscape(m.name) + "](<" + WS + m.workshopId + ">)"
+      : m.order + ". " + discordEscape(m.name) + " *(local mod, no Workshop page)*";
+  });
+  var bodies = [], cur = [], size = 0, headerRoom = 80;
+  lines.forEach(function(line){
+    if (size + line.length + 1 > DISCORD_LIMIT - headerRoom && cur.length) { bodies.push(cur.join("\n")); cur = []; size = 0; }
+    cur.push(line); size += line.length + 1;
+  });
+  if (cur.length) bodies.push(cur.join("\n"));
+  return bodies.map(function(body, i){
+    var head = "**Project Zomboid mod list** (" + mods.length + " mods, load order)";
+    if (bodies.length > 1) head += " - part " + (i + 1) + "/" + bodies.length;
+    return head + "\n" + body;
+  });
+}
+function discordHtml(parts){
+  return '<div class="panel" id="parts"><h2>Copy for Discord</h2><p class="sub" style="margin:0">Paste each part as its own Discord message.</p>' +
+    parts.map(function(p, i){
+      return '<div class="part"><div class="head"><span>Part ' + (i + 1) + ' of ' + parts.length +
+        ' &middot; ' + p.length + ' characters</span><button data-i="' + i + '">Copy</button></div>' +
+        '<textarea readonly rows="6">' + esc(p) + '</textarea></div>';
+    }).join('') + '</div>';
+}
+
+// -------------------------------------------------------------- download
+
+// The downloaded page is this same viewer with the list built in, so whoever
+// you send it to also gets Compare, Copy import code and Copy for Discord.
+var DEFAULT_TITLE = "Project Zomboid Mod List";
+var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function listTitle(data){ return (data.title && String(data.title).trim()) || DEFAULT_TITLE; }
+
+// "2026-11-02 08:14" -> "Nov 2, 2026"
+function niceDate(s){
+  var m = String(s || "").match(/^(\d{4})-(\d{2})-(\d{2})/);
+  return m ? MONTHS[+m[2] - 1] + " " + (+m[3]) + ", " + m[1] : "";
+}
+
+// The text Discord (and other sites) show when the hosted page's link is pasted.
+function previewInfo(data){
+  var mods = data.mods || [];
+  var names = mods.slice(0, 3).map(function(m){ return m.name; });
+  var rest = mods.length - names.length, lead = "";
+  if (names.length) {
+    lead = rest > 0 ? names.join(", ") + " and " + rest + " more."
+      : names.length === 1 ? names[0] + "."
+      : names.slice(0, -1).join(", ") + " and " + names[names.length - 1] + ".";
+  }
+  var date = niceDate(data.exported);
+  return {
+    title: listTitle(data) + ": " + mods.length + (mods.length === 1 ? " mod" : " mods"),
+    description: "Project Zomboid load order" + (date ? ", exported " + date : "") + ". " + lead +
+      " Open to see every mod with its Steam Workshop link, compare with your list, or copy an import code."
+  };
+}
+
+function headTags(data){
+  var p = previewInfo(data);
+  return '<title>' + esc(p.title) + '</title>\n' +
+    '<meta name="description" content="' + esc(p.description) + '">\n' +
+    '<meta property="og:type" content="website">\n' +
+    '<meta property="og:site_name" content="Mod List Exporter">\n' +
+    '<meta property="og:title" content="' + esc(p.title) + '">\n' +
+    '<meta property="og:description" content="' + esc(p.description) + '">\n' +
+    '<meta name="theme-color" content="#c9a227">';
+}
+
+function standalonePage(data){
+  var json = JSON.stringify(data).replace(/</g, "\\u003c");
+  // If this page was itself a download, drop its old built-in list and preview tags first.
+  // Only the <head> is edited, so this page's own script text is never touched.
+  var cut = PAGE_SOURCE.indexOf("</head>");
+  var head = PAGE_SOURCE.slice(0, cut)
+    .replace(/\n?<meta (?:name="description"|property="og:[a-z_]+"|name="theme-color")[^>]*>/g, "")
+    .replace(/<title>[\s\S]*?<\/title>/, headTags(data));
+  var rest = PAGE_SOURCE.slice(cut).replace(/\n?<script>window\.MODLIST = [\s\S]*?;<\/script>/, "");
+  return head + rest.replace("<body>", "<body>\n<script>window.MODLIST = " + json + ";<\/script>");
+}
+var NAME_KEY = "modlistexporter.listName";
+function savedName(){ try { return localStorage.getItem(NAME_KEY) || ""; } catch (e) { return ""; } }
+function saveName(v){ try { localStorage.setItem(NAME_KEY, v); } catch (e) {} }
+
+function download(data){
+  var blob = new Blob([standalonePage(data)], {type: "text/html"});
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "ModList.html";
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+}
+
+// --------------------------------------------------------------- parsing
+// Reads someone else's list from any of: an import code, a Discord post,
+// a Mods= server line, a ModList.html (new or old), or modlist_data.txt.
+// Returns [{order, id?, name, workshopId?}] or null.
+
+function unescapeDiscord(s){ return s.replace(/\\(.)/g, "$1"); }
+function lastPart(id){ id = String(id).trim(); var i = id.lastIndexOf("\\"); return i >= 0 ? id.slice(i + 1) : id; }
+
+function parseList(text){
+  text = String(text || "");
+  if (!text.trim()) return null;
+
+  // modlist_data.txt or a downloaded ModList.html
+  var m = text.match(/window\.MODLIST\s*=\s*(\{[\s\S]*?\})\s*;\s*(?:<\/script>|$)/);
+  if (m) { try { var d = JSON.parse(m[1]); if (d.mods) return d.mods; } catch (e) {} }
+
+  var lines = text.split(/\r?\n/), out = [];
+
+  // Import code
+  if (/^\s*PZMODLIST\b/.test(text)) {
+    lines.slice(1).forEach(function(l){
+      if (!l.trim() || /^exported=/.test(l)) return;
+      var p = l.split("|");
+      if (p.length < 2) return;
+      out.push({ order: out.length + 1, workshopId: p[0].trim() || null, id: lastPart(p[1]), name: p.slice(2).join("|").trim() || lastPart(p[1]) });
+    });
+    return out.length ? out : null;
+  }
+
+  // Mods= line from a server .ini (gives IDs and order)
+  var ml = text.match(/^\s*Mods\s*=\s*(.+)$/m);
+  if (ml) {
+    ml[1].split(";").forEach(function(id){
+      id = lastPart(id);
+      if (id) out.push({ order: out.length + 1, id: id, name: id, workshopId: null });
+    });
+    if (out.length) return out;
+  }
+
+  // Discord post (one or several parts pasted together)
+  lines.forEach(function(l){
+    var a = l.match(/^\s*(\d+)\.\s+\[(.+)\]\(<?https?:\/\/steamcommunity\.com\/sharedfiles\/filedetails\/\?id=(\d+)>?\)/);
+    if (a) { out.push({ order: +a[1], name: unescapeDiscord(a[2]), workshopId: a[3], id: null }); return; }
+    var b = l.match(/^\s*(\d+)\.\s+(.+?)\s+\*\(local mod/);
+    if (b) out.push({ order: +b[1], name: unescapeDiscord(b[2]), workshopId: null, id: null });
+  });
+  if (out.length) {
+    out.sort(function(x, y){ return x.order - y.order; });
+    out.forEach(function(x, i){ x.order = i + 1; });
+    return out;
+  }
+
+  // Older ModList.html (plain page, no built-in data)
+  if (/<li[\s>]/i.test(text)) {
+    var doc = new DOMParser().parseFromString(text, "text/html");
+    Array.prototype.forEach.call(doc.querySelectorAll("ol li"), function(li){
+      var nameEl = li.querySelector(".name a, .name span");
+      var meta = (li.querySelector(".meta") || {}).textContent || "";
+      var idm = meta.match(/Mod ID:\s*([^\s·]+)/);
+      var link = li.querySelector(".name a");
+      var wm = link && link.href.match(/[?&]id=(\d+)/);
+      if (nameEl) out.push({ order: out.length + 1, name: nameEl.textContent.trim(), id: idm ? idm[1] : null, workshopId: wm ? wm[1] : null });
+    });
+    return out.length ? out : null;
+  }
+  return null;
+}
+
+// -------------------------------------------------------------- comparing
+
+function compareLists(mine, theirs){
+  var used = {}, pairs = [], missing = [], byId = {}, byWid = {};
+  mine.forEach(function(m, i){
+    if (m.id) byId[m.id.toLowerCase()] = i;
+    if (m.workshopId) (byWid[m.workshopId] = byWid[m.workshopId] || []).push(i);
+  });
+  var norm = function(s){ return String(s || "").toLowerCase().replace(/\s+/g, " ").trim(); };
+
+  theirs.forEach(function(t, ti){
+    var hit = -1;
+    if (t.id && byId[t.id.toLowerCase()] != null && !used[byId[t.id.toLowerCase()]]) hit = byId[t.id.toLowerCase()];
+    if (hit < 0 && t.workshopId && byWid[t.workshopId]) {
+      var c = byWid[t.workshopId].filter(function(i){ return !used[i]; });
+      var named = c.filter(function(i){ return norm(mine[i].name) === norm(t.name); });
+      hit = named.length ? named[0] : (c.length ? c[0] : -1);
+    }
+    if (hit < 0 && !t.id && !t.workshopId) {
+      for (var i = 0; i < mine.length; i++) if (!used[i] && norm(mine[i].name) === norm(t.name)) { hit = i; break; }
+    }
+    if (hit >= 0) { used[hit] = true; pairs.push({ mine: hit, theirs: ti }); }
+    else missing.push(ti);
+  });
+  var extra = [];
+  mine.forEach(function(m, i){ if (!used[i]) extra.push(i); });
+
+  // "Different order": the fewest shared mods that would have to move so both
+  // lists agree (longest increasing subsequence of their positions in my order).
+  pairs.sort(function(a, b){ return a.mine - b.mine; });
+  var seq = pairs.map(function(p){ return p.theirs; });
+  var tails = [], prev = new Array(seq.length), idx = [];
+  seq.forEach(function(v, i){
+    var lo = 0, hi = tails.length;
+    while (lo < hi) { var mid = (lo + hi) >> 1; if (seq[tails[mid]] < v) lo = mid + 1; else hi = mid; }
+    prev[i] = lo > 0 ? tails[lo - 1] : -1;
+    tails[lo] = i;
+  });
+  var keep = {}, k = tails.length ? tails[tails.length - 1] : -1;
+  while (k >= 0) { keep[k] = true; k = prev[k]; }
+  var moved = {};
+  pairs.forEach(function(p, i){ p.moved = !keep[i]; if (p.moved) moved[p.mine] = p; });
+
+  var mineState = {}, theirState = {};
+  pairs.forEach(function(p){ mineState[p.mine] = p; theirState[p.theirs] = p; });
+  return { pairs: pairs, missing: missing, extra: extra, moved: pairs.filter(function(p){ return p.moved; }),
+           mineState: mineState, theirState: theirState };
+}
+
+function modLink(m){
+  return m.workshopId
+    ? '<a href="' + WS + m.workshopId + '" target="_blank" rel="noopener">' + esc(m.name) + '</a>'
+    : esc(m.name);
+}
+
+function renderCompare(mine, theirs, r, view){
+  var html = '<div class="stats">' +
+    '<div class="stat"><b>' + r.pairs.length + '</b><span>In both</span></div>' +
+    '<div class="stat"><b class="c-miss">' + r.missing.length + '</b><span>You\'re missing</span></div>' +
+    '<div class="stat"><b class="c-extra">' + r.extra.length + '</b><span>Only you have</span></div>' +
+    '<div class="stat"><b class="c-move">' + r.moved.length + '</b><span>Different order</span></div></div>' +
+    '<div class="bar"><button id="v-side" class="' + (view === "side" ? "on" : "") + '">Side by side</button>' +
+    '<button id="v-sum" class="' + (view === "sum" ? "on" : "") + '">Summary only</button>' +
+    (r.missing.length ? '<button id="cp-miss">Copy missing links</button>' : '') + '</div>';
+
+  if (view === "side") {
+    var col = function(title, list, state, side){
+      return '<div class="cl"><div class="h">' + title + ' (' + list.length + ')</div>' + list.map(function(m, i){
+        var p = state[i], pill;
+        if (!p) pill = side === "mine" ? '<span class="pill p-extra">only you</span>' : '<span class="pill p-miss">you\'re missing</span>';
+        else if (p.moved) pill = '<span class="pill p-move">' + (side === "mine" ? 'theirs: ' + (p.theirs + 1) : 'yours: ' + (p.mine + 1)) + '</span>';
+        else pill = '<span class="pill p-ok">same</span>';
+        return '<div class="cr"><span class="i">' + (i + 1) + '</span><span class="t">' + modLink(m) + '</span>' + pill + '</div>';
+      }).join('') + '</div>';
+    };
+    html += '<div class="cols">' + col("Your list", mine, r.mineState, "mine") + col("Their list", theirs, r.theirState, "theirs") + '</div>';
+  } else {
+    var sec = function(cls, title, items){
+      return '<div class="sec"><h2 class="' + cls + '">' + title + '</h2>' +
+        (items.length ? '<ul>' + items.join('') + '</ul>' : '<p class="hint">None</p>') + '</div>';
+    };
+    html += sec("c-miss", "You're missing", r.missing.map(function(i){
+      var t = theirs[i];
+      return '<li>' + modLink(t) + (t.workshopId ? '' : ' <span class="tag">local mod</span>') + '</li>';
+    }));
+    html += sec("c-extra", "Only you have", r.extra.map(function(i){ return '<li>' + modLink(mine[i]) + '</li>'; }));
+    html += sec("c-move", "Different order", r.moved.map(function(p){
+      return '<li>' + modLink(mine[p.mine]) + ' <span class="hint">yours: ' + (p.mine + 1) + ', theirs: ' + (p.theirs + 1) + '</span></li>';
+    }));
+  }
+  return html;
+}
+
+function compareHtml(){
+  return '<div class="panel" id="cmp"><h2>Compare with another list</h2>' +
+    '<div class="drop" id="drop"><textarea id="cmp-in" placeholder="Paste their import code, Discord post, or Mods= server line here, or drop their ModList.html onto this box"></textarea></div>' +
+    '<div class="bar" style="margin:10px 0 0"><button id="cmp-go">Compare</button>' +
+    '<button id="cmp-file">Choose file...</button><input type="file" id="cmp-pick" accept=".html,.htm,.txt" style="display:none"></div>' +
+    '<p class="err" id="cmp-err" style="display:none"></p><div id="cmp-out"></div></div>';
+}
+
+function wireCompare(mine){
+  var input = $("cmp-in"), err = $("cmp-err"), out = $("cmp-out"), view = "side", last = null;
+  function showErr(msg){ err.textContent = msg; err.style.display = msg ? "block" : "none"; }
+  function draw(){
+    if (!last) return;
+    out.innerHTML = renderCompare(mine, last.theirs, last.r, view);
+    $("v-side").onclick = function(){ view = "side"; draw(); };
+    $("v-sum").onclick = function(){ view = "sum"; draw(); };
+    var cm = $("cp-miss");
+    if (cm) cm.onclick = function(){
+      var lines = last.r.missing.map(function(i){ var t = last.theirs[i];
+        return t.workshopId ? t.name + " - " + WS + t.workshopId : t.name + " (local mod, no Workshop page)"; });
+      copyText(lines.join("\n"), cm, null, "Copy missing links");
+    };
+  }
+  function run(text){
+    var theirs = parseList(text);
+    if (!theirs || !theirs.length) {
+      showErr("Couldn't read a mod list from that. Paste an import code, a Discord post from Mod List Exporter, a Mods= line, or drop a ModList.html.");
+      out.innerHTML = ""; last = null; return;
+    }
+    showErr("");
+    last = { theirs: theirs, r: compareLists(mine, theirs) };
+    draw();
+  }
+  function readFile(f){ var fr = new FileReader(); fr.onload = function(){ input.value = ""; run(fr.result); }; fr.readAsText(f); }
+  $("cmp-go").onclick = function(){ run(input.value); };
+  $("cmp-file").onclick = function(){ $("cmp-pick").click(); };
+  $("cmp-pick").onchange = function(){ if (this.files[0]) readFile(this.files[0]); this.value = ""; };
+  var drop = $("drop");
+  drop.addEventListener("dragover", function(e){ e.preventDefault(); drop.classList.add("over"); });
+  drop.addEventListener("dragleave", function(){ drop.classList.remove("over"); });
+  drop.addEventListener("drop", function(e){
+    e.preventDefault(); drop.classList.remove("over");
+    if (e.dataTransfer.files && e.dataTransfer.files[0]) readFile(e.dataTransfer.files[0]);
+    else run(e.dataTransfer.getData("text"));
+  });
+}
+
+// ------------------------------------------------------------------ page
+
+function togglePanel(id, btn){
+  ["parts", "cmp"].forEach(function(p){
+    var el = $(p), b = $(p === "parts" ? "dc" : "cm");
+    var open = p === id && !el.classList.contains("open");
+    el.classList.toggle("open", open); b.classList.toggle("on", open);
+  });
+}
+
+function show(data){
+  var parts = renderList(data);
+  var dparts = discordParts(data);
+  var title = listTitle(data);
+  document.title = title;
+  var nameVal = data.title || savedName();
+  $("app").innerHTML = '<h1 id="h1">' + esc(title) + '</h1><p class="sub">' + parts.sub + '</p>' +
+    '<div class="bar"><button id="dc">Copy for Discord</button>' +
+    '<button id="ic">Copy import code</button><button id="cm">Compare</button></div>' +
+    '<div class="namebar"><label for="lname">List name (shows in the page title and the Discord card)</label>' +
+    '<div class="namerow"><input id="lname" type="text" maxlength="80" placeholder="' + DEFAULT_TITLE + '" value="' + esc(nameVal) + '">' +
+    '<button id="dl">Download as .html</button></div></div>' +
+    discordHtml(dparts) + compareHtml() + parts.list + parts.config;
+  $("dl").onclick = function(){
+    var name = $("lname").value.trim();
+    saveName(name);
+    var copy = {};
+    for (var k in data) copy[k] = data[k];
+    copy.title = name;
+    download(copy);
+  };
+  $("ic").onclick = function(){ copyText(importCode(data), $("ic")); };
+  $("dc").onclick = function(){
+    togglePanel("parts");
+    if ($("parts").classList.contains("open") && dparts.length === 1) {
+      var b = $("parts").querySelector("button"); copyText(dparts[0], b, $("parts").querySelector("textarea"));
+    }
+  };
+  $("cm").onclick = function(){ togglePanel("cmp"); if ($("cmp").classList.contains("open")) $("cmp-in").focus(); };
+  Array.prototype.forEach.call(document.querySelectorAll("#parts button"), function(b){
+    var i = +b.getAttribute("data-i");
+    b.onclick = function(){ copyText(dparts[i], b, b.parentNode.nextElementSibling); };
+  });
+  wireCompare(data.mods || []);
+}
+
+function showMissing(){
+  $("app").innerHTML = '<h1>Project Zomboid Mod List</h1>' +
+    '<div class="empty">No exported list found yet. In Project Zomboid, open the mod load order screen, click <b>Export</b>, then <b>Export HTML</b>, and reload this page.</div>';
+}
+
+function tryLoad(i){
+  if (window.MODLIST) { show(window.MODLIST); return; }
+  if (i >= CANDIDATES.length) { showMissing(); return; }
+  var s = document.createElement("script");
+  s.src = CANDIDATES[i] + "?t=" + Date.now();
+  s.onload = s.onerror = function(){ tryLoad(i + 1); };
+  document.body.appendChild(s);
+}
+tryLoad(0);
+</script></body></html>
