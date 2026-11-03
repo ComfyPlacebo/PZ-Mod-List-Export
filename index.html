@@ -3,11 +3,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Comfy's Viewpoint List: 72 mods</title>
-<meta name="description" content="Project Zomboid load order, exported Nov 2, 2026. ZombieBuddy, Viewpoint, Project Viewpoint: General Mod Map Fix and 69 more. Open to see every mod with its Steam Workshop link, compare with your list, or copy an import code.">
+<meta name="description" content="Project Zomboid load order, exported Nov 3, 2026. ZombieBuddy, Viewpoint, Project Viewpoint: General Mod Map Fix and 69 more. Open to see every mod with its Steam Workshop link, compare with your list, or copy an import code. Includes a Steam collection to subscribe to all.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Mod List Exporter">
 <meta property="og:title" content="Comfy's Viewpoint List: 72 mods">
-<meta property="og:description" content="Project Zomboid load order, exported Nov 2, 2026. ZombieBuddy, Viewpoint, Project Viewpoint: General Mod Map Fix and 69 more. Open to see every mod with its Steam Workshop link, compare with your list, or copy an import code.">
+<meta property="og:description" content="Project Zomboid load order, exported Nov 3, 2026. ZombieBuddy, Viewpoint, Project Viewpoint: General Mod Map Fix and 69 more. Open to see every mod with its Steam Workshop link, compare with your list, or copy an import code. Includes a Steam collection to subscribe to all.">
 <meta name="theme-color" content="#c9a227">
 <style>
 :root{--bg:#141414;--card:#1e1e1e;--card2:#252525;--line:#2c2c2c;--text:#e8e6e3;--muted:#9a968f;--accent:#c9a227;--link:#7fb3ff;
@@ -45,6 +45,37 @@ label{display:block;margin-top:12px;color:var(--muted);font-size:13px}
 .namerow{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
 .namerow input{flex:1;min-width:200px;background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font:inherit;font-size:14px}
 .namerow input:focus{outline:none;border-color:var(--accent)}
+.coll{border-top:1px solid var(--line);margin-top:16px;padding-top:12px}
+.coll h3{margin:0 0 4px;font-size:15px;font-weight:600}
+.coll h3 span{font-weight:400;font-size:12px;color:var(--muted)}
+.step{display:flex;gap:10px;align-items:flex-start;margin:12px 0}
+.num{flex:none;width:22px;height:22px;border-radius:50%;border:1px solid var(--accent);color:var(--accent);font-size:12px;display:flex;align-items:center;justify-content:center}
+.step .body{flex:1;min-width:0}
+.warn{color:var(--move);font-size:13px;margin:6px 0 0}
+a.btn{display:inline-block;background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:6px 12px;font-size:14px;text-decoration:none}
+a.btn:hover{border-color:var(--accent)}
+.ck{display:none;border:1px solid var(--line);border-radius:8px;margin-top:10px;overflow:hidden}
+.ck.open{display:block}
+.ckh{display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--card2);font-size:13px;color:var(--muted);flex-wrap:wrap}
+.prog{flex:1;min-width:80px;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.prog div{height:100%;background:var(--accent);width:0}
+.ckrows{max-height:360px;overflow-y:auto}
+.ckr{margin:0;display:flex;align-items:center;gap:10px;padding:7px 12px;color:var(--text);border-top:1px solid #262626;font-size:14px;cursor:pointer}
+.ckr input{width:15px;height:15px;accent-color:var(--accent);margin:0;flex:none}
+.ckr .nm{flex:1;min-width:0}
+.ckr .nm small{display:block;font-size:12px;color:var(--muted)}
+.ckr.done .nm{color:var(--muted)}
+.ckr .wid{font-size:12px;color:var(--link);white-space:nowrap;text-decoration:none}
+.banner{border:1px solid var(--accent);background:#2a2312;border-radius:8px;padding:12px 14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 16px}
+.banner a.big{font-size:14px;font-weight:600;color:#f0d77a;border:1px solid var(--accent);border-radius:6px;padding:7px 14px;text-decoration:none}
+.banner a.big:hover{background:rgba(201,162,39,.15)}
+.banner p{margin:0;flex:1;min-width:220px;font-size:13px;color:#d9cfb0}
+.banner p a{color:#f0d77a}
+.seg{display:inline-flex}
+.seg button{border-radius:0;font-size:13px;padding:4px 10px}
+.seg button:first-child{border-radius:6px 0 0 6px}
+.seg button:last-child{border-radius:0 6px 6px 0;margin-left:-1px}
+.linkmode{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:13px;margin:0 0 10px}
 .empty{padding:24px;border:1px dashed var(--line);border-radius:8px;color:var(--muted)}
 .drop{border:1px dashed #444;border-radius:8px;padding:10px;transition:border-color .15s}
 .drop.over{border-color:var(--accent)}
@@ -76,7 +107,7 @@ label{display:block;margin-top:12px;color:var(--muted);font-size:13px}
 </style>
 </head>
 <body>
-<script>window.MODLIST = {"exported":"2026-11-02 13:26","mods":[{"order":1,"id":"ZombieBuddy","name":"ZombieBuddy","workshopId":"3619862853","author":"Zed","version":null},{"order":2,"id":"Viewpoint","name":"Viewpoint","workshopId":"3809306528","author":null,"version":"0.1.6.1"},{"order":3,"id":"PV-modmapbakefix","name":"Project Viewpoint: General Mod Map Fix","workshopId":"3813929757","author":"PV-modmapbakefix contributors","version":"0.1.2"},{"order":4,"id":"VandalismCore","name":"Vandalism - Multiplayer Core","workshopId":"3818587612","author":"Azakaela Redfire","version":"0.5.5-alpha"},{"order":5,"id":"ViewpointVandalism","name":"Vandalism","workshopId":"3818587612","author":"Azakaela Redfire","version":"0.5.5-alpha"},{"order":6,"id":"ProjectViewpointFeatureFixes","name":"Project Viewpoint Feature Upgrades and Fixes","workshopId":"3826337265","author":"Midgar","version":"1.1.20-litfog.1"},{"order":7,"id":"ViewpointExtendedSupport","name":"Viewpoint Extended Support","workshopId":"3812978679","author":"Maeiro","version":"0.4.50"},{"order":8,"id":"ProjectViewpointQOL","name":"Project Viewpoint QOL","workshopId":"3811256204","author":null,"version":null},{"order":9,"id":"HottieZPosterPack","name":"Hottie-Z Collectible Poster Pack [B42]","workshopId":"3792134082","author":null,"version":"42.20.41"},{"order":10,"id":"davadrive","name":"Controller \u003c-> keyboard switching","workshopId":"2916485901","author":null,"version":null},{"order":11,"id":"aparosa_pz3dMinimap","name":"Project Viewpoint Minimap (PZ3D Minimap) [B42]","workshopId":"3810179295","author":"APAROSA","version":"1.7.20"},{"order":12,"id":"ViewpointRoofs","name":"Viewpoint - Roofs (WIP)","workshopId":"3817294484","author":"Timidis1","version":"0.9.0"},{"order":13,"id":"ProjectViewpointNearVegetation","name":"Project Viewpoint: TREE in 3D","workshopId":"3813172420","author":"Project Viewpoint Near Vegetation contributors","version":"0.3.15"},{"order":14,"id":"VPSmooth3D_Plants","name":"Viewpoint Smooth 3D: bushes and potted plants","workshopId":"3826458381","author":null,"version":"0.5.0"},{"order":15,"id":"VPSmooth3D_Grass","name":"Viewpoint Smooth 3D: grass and small plants","workshopId":"3826458381","author":null,"version":"0.5.0"},{"order":16,"id":"WallVines3D","name":"Wall Vines 3D (Viewpoint)","workshopId":"3828883205","author":"Eugenio","version":"1.0.0"},{"order":17,"id":"PZVoxelStudioViewpoint","name":"6282 3D models for Viewpoint [sour_kisel]","workshopId":"3810302175","author":"sour_kisel","version":"1.0"},{"order":18,"id":"ViewpointFences","name":"Viewpoint 3D Fences and Gates - Beta","workshopId":"3813723091","author":"Jordan","version":"0.3.8"},{"order":19,"id":"ProjectViewpointShelves","name":"Project Viewpoint: KK's Shelves in 3D","workshopId":"3815931973","author":"Kauno","version":"0.4.7"},{"order":20,"id":"Railings3D","name":"Railings 3D (Viewpoint)","workshopId":"3825682908","author":"Eugenio","version":"1.1.0"},{"order":21,"id":"WallTextureFixForViewpoint","name":"Wall Texture Fix for Viewpoint","workshopId":"3820609079","author":"biggles","version":"0.3.01"},{"order":22,"id":"ViewpointDoor","name":"Viewpoint - Door Fix","workshopId":"3812151347","author":"GamerKreep","version":"1.0"},{"order":23,"id":"VisibleDoorDamagebyYurik","name":"Visible Door Damage [B42 MP]","workshopId":"3799596085","author":"Yurik","version":"1.1.0"},{"order":24,"id":"BasileDoors3D","name":"Project Viewpoint - 3D Doors, Gates & Garages","workshopId":"3818859807","author":"Basile","version":"0.2.8"},{"order":25,"id":"DGVWindows3D","name":"3D Windows for Viewpoint [B42] byDGV","workshopId":"3820833348","author":"DGV","version":null},{"order":26,"id":"DGVCurtains","name":"3D Curtains & Blinds for Viewpoint [B42] byDGV","workshopId":"3818873810","author":"DGV","version":null},{"order":27,"id":"ViewpointVisualFixes","name":"ViewpointVisualFixes","workshopId":"3821308495","author":null,"version":"0.8.0"},{"order":28,"id":"RealisticDoorImpacts","name":"Project Viewpoint - Actual Door Rattling","workshopId":"3820462383","author":"sladed","version":"0.1.6-alpha"},{"order":29,"id":"GrassierGrassViewpoint","name":"Grassier Grass (Viewpoint)","workshopId":"3818853354","author":"Leonardoinc22","version":"0.1.4"},{"order":30,"id":"ProjectViewpointKI5VehiclePartsFix","name":"Project Viewpoint - KI5 Vehicle Parts Fix","workshopId":"3815019204","author":"astan","version":"1.3"},{"order":31,"id":"ViewpointVehicleShellFix","name":"Viewpoint - Vehicle Shell Fix","workshopId":"3819801335","author":"Community compatibility patch","version":"1.1"},{"order":32,"id":"ViewpointMilitaryVehicleCompat","name":"Viewpoint - Papa_Chad Vehicle Compatibility","workshopId":"3812659488","author":null,"version":"1.3.0"},{"order":33,"id":"ViewpointCropVisibility","name":"Viewpoint - Crop Visibility Fix","workshopId":"3812659173","author":null,"version":"1.0.0"},{"order":34,"id":"ViewpointButcherHookCompat","name":"Viewpoint - Butcher Hook 3D Compatibility","workshopId":"3812723539","author":null,"version":"1.1.0"},{"order":35,"id":"ViewpointBuildingAlignment","name":"Viewpoint - Building Alignment Fix","workshopId":"3812932905","author":null,"version":"1.0.0"},{"order":36,"id":"ViewpointWorkstations3D","name":"Viewpoint's Workstations Overhaul","workshopId":"3828755546","author":null,"version":"0.140.13"},{"order":37,"id":"ViewpointLogWalls","name":"Viewpoint - 3D Construction","workshopId":"3820190473","author":null,"version":"0.8.0-rc1"},{"order":38,"id":"LevelFurniture","name":"Level Furniture (Viewpoint)","workshopId":"3823984682","author":"Eugenio","version":"1.0.0"},{"order":39,"id":"ProjectViewpointADS","name":"Project Viewpoint: Recoil & ADS (Viewpoint add-on)","workshopId":"3812612054","author":"Matthew","version":"1.9.1"},{"order":40,"id":"ViewpointBodycam","name":"Viewpoint Immersive Camera Motion","workshopId":"3818432217","author":"ChippinIn","version":"0.1.17"},{"order":41,"id":"ViewpointTrueBallistics","name":"Viewpoint True Ballistics","workshopId":"3812864848","author":"Matthew","version":"1.4.6"},{"order":42,"id":"ViewpointAdvancedThrowables","name":"Viewpoint - Advanced Throwables","workshopId":"3813194971","author":"Matthew","version":"1.4.1"},{"order":43,"id":"ViewpointAdvancedMovement","name":"Viewpoint Advanced Movement","workshopId":"3812702301","author":null,"version":"1.4.18"},{"order":44,"id":"VisceralViewpoint","name":"Visceral (Viewpoint)","workshopId":"3820965001","author":"Leonardoinc22","version":"1.3.0"},{"order":45,"id":"ViewpointBloodFX","name":"Blood FX for Viewpoint","workshopId":"3811472160","author":"sour_kisel","version":"1.5.2"},{"order":46,"id":"ViewpointBloodFXAddon","name":"Blood FX for Viewpoint - Fixes","workshopId":"3813801053","author":null,"version":"1.0"},{"order":47,"id":"ViewpointForaging","name":"Viewpoint Foraging","workshopId":"3814994364","author":null,"version":"0.3.0"},{"order":48,"id":"FishingView","name":"Viewpoint Fishing","workshopId":"3814560827","author":null,"version":"1.0.45"},{"order":49,"id":"ViewpointWorkingTVs","name":"Viewpoint - 3D Working TVs & Radios","workshopId":"3821610732","author":"ajlittle","version":"1.0.0"},{"order":50,"id":"ViewpointInteriors","name":"Viewpoint Vehicle Interiors","workshopId":"3826550325","author":"gustavobr120","version":"1.0.1"},{"order":51,"id":"ViewpointLivingProps","name":"Viewpoint: Living Props","workshopId":"3816442251","author":null,"version":"1.0.3"},{"order":52,"id":"ViewpointPlacementFix","name":"Viewpoint Placement Fix","workshopId":"3816521966","author":null,"version":"0.2.7"},{"order":53,"id":"isometricnomore","name":"Project Viewpoint - Isometric No More","workshopId":"3819166046","author":null,"version":"0.1.23"},{"order":54,"id":"ViewpointLight","name":"Viewpoint - Light Fix","workshopId":"3811344119","author":"GamerKreep","version":"1.4.7"},{"order":55,"id":"RoadHeadlightsLocal","name":"Viewpoint Road Lights [B42]","workshopId":"3825697513","author":null,"version":"0.3.1"},{"order":56,"id":"Halcyon","name":"Halcyon","workshopId":"3816312077","author":"you","version":"0.2.24"},{"order":57,"id":"DeadwoodShaders","name":"Deadwood-Shaders","workshopId":"3818656834","author":"Artmines","version":"1.0.9"},{"order":58,"id":"MitypointViewpointShader","name":"Mitypoint","workshopId":"3819221828","author":"Mityzuk / Mitypoint","version":"0.3.36.3"},{"order":59,"id":"QuietLightAssets","name":"Nobel Shaders","workshopId":"3816746100","author":null,"version":"0.2.6"},{"order":60,"id":"ViewpointTrueWeathers","name":"Project Viewpoint: True Weathers & Lighting","workshopId":"3813908957","author":"Matthew","version":"3.21.4"},{"order":61,"id":"Redraw","name":"Redraw (Viewpoint shader pack)","workshopId":"3818548144","author":"NotSoHere","version":"2.0.0"},{"order":62,"id":"ViewpointUplink","name":"Viewpoint Uplink","workshopId":"3821712511","author":"Pajamas","version":"0.4.1"},{"order":63,"id":"WornLens","name":"Worn Lens","workshopId":"3823573829","author":"Worn Lens","version":"1.1.0"},{"order":64,"id":"WastelandShaders","name":"Wasteland Shaders (Viewpoint)","workshopId":"3820467974","author":"Bombaclat server","version":"1.0.0"},{"order":65,"id":"HollowLightShaders","name":"Hollow Light (Viewpoint shader pack)","workshopId":"3821721515","author":"Pajamas","version":"1.47"},{"order":66,"id":"ViewpointDeepWater","name":"Viewpoint Simply Real Water","workshopId":"3829002754","author":"Grim Hiker","version":null},{"order":67,"id":"CityscapeViewpointMaps","name":"Cityscape Viewpoint Maps","workshopId":"3826608236","author":null,"version":"0.3.3"},{"order":68,"id":"ProjectViewpointQOLAdditionalFeatures","name":"Project Viewpoint QOL Additional Features","workshopId":"3811256204","author":null,"version":null},{"order":69,"id":"ProjectViewpointQOLControllerSupport","name":"Project Viewpoint QOL Controller Support","workshopId":"3811256204","author":null,"version":null},{"order":70,"id":"ProjectViewpointStars","name":"Project Viewpoint: Kentucky Nights (Beta)","workshopId":"3821241473","author":"bw054","version":"0.1.2"},{"order":71,"id":"ModLoadOrderSorter_b42","name":"Mod Load Order Sorter [b42]","workshopId":"3423660713","author":"REfRigERatoR","version":null},{"order":72,"id":"ModListExporter","name":"Mod List Exporter","workshopId":null,"author":"ComfyPlacebo","version":null}],"title":"Comfy's Viewpoint List"};</script>
+<script>window.MODLIST = {"exported":"2026-11-03 04:23","mods":[{"order":1,"id":"ZombieBuddy","name":"ZombieBuddy","workshopId":"3619862853","author":"Zed","version":null},{"order":2,"id":"Viewpoint","name":"Viewpoint","workshopId":"3809306528","author":null,"version":"0.1.6.1"},{"order":3,"id":"PV-modmapbakefix","name":"Project Viewpoint: General Mod Map Fix","workshopId":"3813929757","author":"PV-modmapbakefix contributors","version":"0.1.2"},{"order":4,"id":"ProjectViewpointFeatureFixes","name":"Project Viewpoint Feature Upgrades and Fixes","workshopId":"3826337265","author":"Midgar","version":"1.1.20-litfog.1"},{"order":5,"id":"ViewpointExtendedSupport","name":"Viewpoint Extended Support","workshopId":"3812978679","author":"Maeiro","version":"0.4.50"},{"order":6,"id":"ProjectViewpointQOL","name":"Project Viewpoint QOL","workshopId":"3811256204","author":null,"version":null},{"order":7,"id":"davadrive","name":"Controller \u003c-> keyboard switching","workshopId":"2916485901","author":null,"version":null},{"order":8,"id":"aparosa_pz3dMinimap","name":"Project Viewpoint Minimap (PZ3D Minimap) [B42]","workshopId":"3810179295","author":"APAROSA","version":"1.7.20"},{"order":9,"id":"ViewpointRoofs","name":"Viewpoint - Roofs (WIP)","workshopId":"3817294484","author":"Timidis1","version":"0.9.1"},{"order":10,"id":"ProjectViewpointNearVegetation","name":"Project Viewpoint: TREE in 3D","workshopId":"3813172420","author":"Project Viewpoint Near Vegetation contributors","version":"0.3.15"},{"order":11,"id":"VPSmooth3D_Plants","name":"Viewpoint Smooth 3D: bushes and potted plants","workshopId":"3826458381","author":null,"version":"0.5.0"},{"order":12,"id":"VPSmooth3D_Grass","name":"Viewpoint Smooth 3D: grass and small plants","workshopId":"3826458381","author":null,"version":"0.5.0"},{"order":13,"id":"WallVines3D","name":"Wall Vines 3D (Viewpoint)","workshopId":"3828883205","author":"Eugenio","version":"1.2.0"},{"order":14,"id":"PZVoxelStudioViewpoint","name":"6282 3D models for Viewpoint [sour_kisel]","workshopId":"3810302175","author":"sour_kisel","version":"1.0"},{"order":15,"id":"ViewpointFences","name":"Viewpoint 3D Fences and Gates - Beta","workshopId":"3813723091","author":"Jordan","version":"0.3.8"},{"order":16,"id":"ProjectViewpointShelves","name":"Project Viewpoint: KK's Shelves in 3D","workshopId":"3815931973","author":"Kauno","version":"0.4.7"},{"order":17,"id":"Railings3D","name":"Railings 3D (Viewpoint)","workshopId":"3825682908","author":"Eugenio","version":"1.1.0"},{"order":18,"id":"WallTextureFixForViewpoint","name":"Wall Texture Fix for Viewpoint","workshopId":"3820609079","author":"biggles","version":"0.3.01"},{"order":19,"id":"ViewpointDoor","name":"Viewpoint - Door Fix","workshopId":"3812151347","author":"GamerKreep","version":"1.0"},{"order":20,"id":"VisibleDoorDamagebyYurik","name":"Visible Door Damage [B42 MP]","workshopId":"3799596085","author":"Yurik","version":"1.1.0"},{"order":21,"id":"BasileDoors3D","name":"Project Viewpoint - 3D Doors, Gates & Garages","workshopId":"3818859807","author":"Basile","version":"0.2.8"},{"order":22,"id":"DGVWindows3D","name":"3D Windows for Viewpoint [B42] byDGV","workshopId":"3820833348","author":"DGV","version":null},{"order":23,"id":"DGVCurtains","name":"3D Curtains & Blinds for Viewpoint [B42] byDGV","workshopId":"3818873810","author":"DGV","version":null},{"order":24,"id":"ViewpointVisualFixes","name":"ViewpointVisualFixes","workshopId":"3821308495","author":null,"version":"0.8.0"},{"order":25,"id":"RealisticDoorImpacts","name":"Project Viewpoint - Actual Door Rattling","workshopId":"3820462383","author":"sladed","version":"0.1.6-alpha"},{"order":26,"id":"GrassierGrassViewpoint","name":"Grassier Grass (Viewpoint)","workshopId":"3818853354","author":"Leonardoinc22","version":"0.1.4"},{"order":27,"id":"ProjectViewpointKI5VehiclePartsFix","name":"Project Viewpoint - KI5 Vehicle Parts Fix","workshopId":"3815019204","author":"astan","version":"1.3"},{"order":28,"id":"ViewpointVehicleShellFix","name":"Viewpoint - Vehicle Shell Fix","workshopId":"3819801335","author":"Community compatibility patch","version":"1.1"},{"order":29,"id":"ViewpointMilitaryVehicleCompat","name":"Viewpoint - Papa_Chad Vehicle Compatibility","workshopId":"3812659488","author":null,"version":"1.3.0"},{"order":30,"id":"ViewpointCropVisibility","name":"Viewpoint - Crop Visibility Fix","workshopId":"3812659173","author":null,"version":"1.0.0"},{"order":31,"id":"ViewpointButcherHookCompat","name":"Viewpoint - Butcher Hook 3D Compatibility","workshopId":"3812723539","author":null,"version":"1.1.0"},{"order":32,"id":"ViewpointBuildingAlignment","name":"Viewpoint - Building Alignment Fix","workshopId":"3812932905","author":null,"version":"1.0.0"},{"order":33,"id":"ViewpointWorkstations3D","name":"Viewpoint's Workstations Overhaul","workshopId":"3828755546","author":null,"version":"0.140.13"},{"order":34,"id":"ViewpointLogWalls","name":"Viewpoint - 3D Construction","workshopId":"3820190473","author":null,"version":"0.8.0-rc1"},{"order":35,"id":"LevelFurniture","name":"Level Furniture (Viewpoint)","workshopId":"3823984682","author":"Eugenio","version":"1.0.0"},{"order":36,"id":"ProjectViewpointADS","name":"Project Viewpoint: Recoil & ADS (Viewpoint add-on)","workshopId":"3812612054","author":"Matthew","version":"1.9.1"},{"order":37,"id":"ViewpointBodycam","name":"Viewpoint Immersive Camera Motion","workshopId":"3818432217","author":"ChippinIn","version":"0.1.17"},{"order":38,"id":"ViewpointTrueBallistics","name":"Viewpoint True Ballistics","workshopId":"3812864848","author":"Matthew","version":"1.4.6"},{"order":39,"id":"ViewpointAdvancedThrowables","name":"Viewpoint - Advanced Throwables","workshopId":"3813194971","author":"Matthew","version":"1.4.1"},{"order":40,"id":"ViewpointAdvancedMovement","name":"Viewpoint Advanced Movement","workshopId":"3812702301","author":null,"version":"1.4.18"},{"order":41,"id":"VisceralViewpoint","name":"Visceral (Viewpoint)","workshopId":"3820965001","author":"Leonardoinc22","version":"1.3.0"},{"order":42,"id":"ViewpointBloodFX","name":"Blood FX for Viewpoint","workshopId":"3811472160","author":"sour_kisel","version":"1.5.2"},{"order":43,"id":"ViewpointBloodFXAddon","name":"Blood FX for Viewpoint - Fixes","workshopId":"3813801053","author":null,"version":"1.0"},{"order":44,"id":"ViewpointForaging","name":"Viewpoint Foraging","workshopId":"3814994364","author":null,"version":"0.3.0"},{"order":45,"id":"FishingView","name":"Viewpoint Fishing","workshopId":"3814560827","author":null,"version":"1.0.45"},{"order":46,"id":"ViewpointWorkingTVs","name":"Viewpoint - 3D Working TVs & Radios","workshopId":"3821610732","author":"ajlittle","version":"1.0.0"},{"order":47,"id":"ViewpointInteriors","name":"Viewpoint Vehicle Interiors","workshopId":"3826550325","author":"gustavobr120","version":"1.0.1"},{"order":48,"id":"ViewpointLivingProps","name":"Viewpoint: Living Props","workshopId":"3816442251","author":null,"version":"1.0.3"},{"order":49,"id":"ViewpointPlacementFix","name":"Viewpoint Placement Fix","workshopId":"3816521966","author":null,"version":"0.2.7"},{"order":50,"id":"isometricnomore","name":"Project Viewpoint - Isometric No More (Not Needed for Viewpoint 0.1.7+)","workshopId":"3819166046","author":null,"version":"0.1.23"},{"order":51,"id":"ViewpointLight","name":"Viewpoint - Light Fix","workshopId":"3811344119","author":"GamerKreep","version":"1.4.7"},{"order":52,"id":"RoadHeadlightsLocal","name":"Viewpoint Road Lights [B42]","workshopId":"3825697513","author":null,"version":"0.3.1"},{"order":53,"id":"Halcyon","name":"Halcyon","workshopId":"3816312077","author":"you","version":"0.2.24"},{"order":54,"id":"DeadwoodShaders","name":"Deadwood-Shaders","workshopId":"3818656834","author":"Artmines","version":"1.0.9"},{"order":55,"id":"MitypointViewpointShader","name":"Mitypoint","workshopId":"3819221828","author":"Mityzuk / Mitypoint","version":"0.3.36.3"},{"order":56,"id":"QuietLightAssets","name":"Nobel Shaders","workshopId":"3816746100","author":null,"version":"0.2.6"},{"order":57,"id":"ViewpointTrueWeathers","name":"Project Viewpoint: True Weathers & Lighting","workshopId":"3813908957","author":"Matthew","version":"3.21.4"},{"order":58,"id":"Redraw","name":"Redraw (Viewpoint shader pack)","workshopId":"3818548144","author":"NotSoHere","version":"2.0.0"},{"order":59,"id":"ViewpointUplink","name":"Viewpoint Uplink","workshopId":"3821712511","author":"Pajamas","version":"0.4.1"},{"order":60,"id":"WornLens","name":"Worn Lens","workshopId":"3823573829","author":"Worn Lens","version":"1.1.0"},{"order":61,"id":"WastelandShaders","name":"Wasteland Shaders (Viewpoint)","workshopId":"3820467974","author":"Bombaclat server","version":"1.0.0"},{"order":62,"id":"HollowLightShaders","name":"Hollow Light (Viewpoint shader pack)","workshopId":"3821721515","author":"Pajamas","version":"1.47"},{"order":63,"id":"ViewpointDeepWater","name":"Viewpoint Simply Real Water","workshopId":"3829002754","author":"Grim Hiker","version":null},{"order":64,"id":"CityscapeViewpointMaps","name":"Cityscape Viewpoint Maps","workshopId":"3826608236","author":null,"version":"0.3.3"},{"order":65,"id":"ProjectViewpointQOLAdditionalFeatures","name":"Project Viewpoint QOL Additional Features","workshopId":"3811256204","author":null,"version":null},{"order":66,"id":"ProjectViewpointQOLControllerSupport","name":"Project Viewpoint QOL Controller Support","workshopId":"3811256204","author":null,"version":null},{"order":67,"id":"ProjectViewpointStars","name":"Project Viewpoint: Kentucky Nights (Beta)","workshopId":"3821241473","author":"bw054","version":"0.1.2"},{"order":68,"id":"ModLoadOrderSorter_b42","name":"Mod Load Order Sorter [b42]","workshopId":"3423660713","author":"REfRigERatoR","version":null},{"order":69,"id":"ModListExporter","name":"Mod List Exporter","workshopId":null,"author":"ComfyPlacebo","version":null},{"order":70,"id":"VandalismCore","name":"Vandalism - Multiplayer Core","workshopId":"3818587612","author":"Azakaela Redfire","version":"0.5.5-alpha"},{"order":71,"id":"ViewpointVandalism","name":"Vandalism","workshopId":"3818587612","author":"Azakaela Redfire","version":"0.5.5-alpha"},{"order":72,"id":"HottieZPosterPack","name":"Hottie-Z Collectible Poster Pack [B42]","workshopId":"3792134082","author":null,"version":"42.20.41"}],"title":"Comfy's Viewpoint List","collection":"3832793314"};</script>
 <main id="app">
   <h1>Project Zomboid Mod List</h1>
   <p class="sub" id="sub">Loading...</p>
@@ -92,6 +123,8 @@ var CANDIDATES = [
   "../42/modlist_data.txt", "../common/modlist_data.txt"
 ];
 var WS = "https://steamcommunity.com/sharedfiles/filedetails/?id=";
+var STEAM_APP = "steam://url/CommunityFilePage/";
+var NEW_COLLECTION = "https://steamcommunity.com/sharedfiles/editcollection/?appid=108600";
 var PAGE_SOURCE = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
 
 function esc(s){
@@ -150,10 +183,12 @@ function copyText(text, btn, ta, label){
 // Import code: what the in-game Import button reads from the clipboard.
 //   PZMODLIST 1
 //   exported=<date>
+//   collection=<Steam collection id>   (optional)
 //   <workshopId>|<modId>|<name>     (one per mod, in load order)
 function importCode(data){
   var lines = ["PZMODLIST 1"];
   if (data.exported) lines.push("exported=" + data.exported);
+  if (data.collection) lines.push("collection=" + data.collection);
   (data.mods || []).forEach(function(m){
     lines.push((m.workshopId || "") + "|" + m.id + "|" + String(m.name || "").replace(/[|\r\n]+/g, " "));
   });
@@ -170,7 +205,8 @@ function discordParts(data){
       ? m.order + ". [" + discordEscape(m.name) + "](<" + WS + m.workshopId + ">)"
       : m.order + ". " + discordEscape(m.name) + " *(local mod, no Workshop page)*";
   });
-  var bodies = [], cur = [], size = 0, headerRoom = 80;
+  var collLine = data.collection ? "Steam collection (subscribe to all): <" + WS + data.collection + ">" : "";
+  var bodies = [], cur = [], size = 0, headerRoom = 80 + (collLine ? collLine.length + 1 : 0);
   lines.forEach(function(line){
     if (size + line.length + 1 > DISCORD_LIMIT - headerRoom && cur.length) { bodies.push(cur.join("\n")); cur = []; size = 0; }
     cur.push(line); size += line.length + 1;
@@ -179,6 +215,7 @@ function discordParts(data){
   return bodies.map(function(body, i){
     var head = "**Project Zomboid mod list** (" + mods.length + " mods, load order)";
     if (bodies.length > 1) head += " - part " + (i + 1) + "/" + bodies.length;
+    if (i === 0 && collLine) head += "\n" + collLine;
     return head + "\n" + body;
   });
 }
@@ -220,7 +257,8 @@ function previewInfo(data){
   return {
     title: listTitle(data) + ": " + mods.length + (mods.length === 1 ? " mod" : " mods"),
     description: "Project Zomboid load order" + (date ? ", exported " + date : "") + ". " + lead +
-      " Open to see every mod with its Steam Workshop link, compare with your list, or copy an import code."
+      " Open to see every mod with its Steam Workshop link, compare with your list, or copy an import code." +
+      (data.collection ? " Includes a Steam collection to subscribe to all." : "")
   };
 }
 
@@ -247,6 +285,7 @@ function standalonePage(data){
   return head + rest.replace("<body>", "<body>\n<script>window.MODLIST = " + json + ";<\/script>");
 }
 var NAME_KEY = "modlistexporter.listName", INDEX_KEY = "modlistexporter.asIndex";
+var COLL_KEY = "modlistexporter.collection", ADDED_KEY = "modlistexporter.added", LINK_KEY = "modlistexporter.linkMode";
 function load(key){ try { return localStorage.getItem(key) || ""; } catch (e) { return ""; } }
 function store(key, v){ try { localStorage.setItem(key, v); } catch (e) {} }
 
@@ -377,10 +416,14 @@ function compareLists(mine, theirs){
            mineState: mineState, theirState: theirState };
 }
 
+function linkMode(){ return load(LINK_KEY) === "browser" ? "browser" : "steam"; }
+
+// In Compare, links open in the Steam app or the browser, whichever the viewer picked.
 function modLink(m){
-  return m.workshopId
-    ? '<a href="' + WS + m.workshopId + '" target="_blank" rel="noopener">' + esc(m.name) + '</a>'
-    : esc(m.name);
+  if (!m.workshopId) return esc(m.name);
+  if (linkMode() === "steam")
+    return '<a href="' + STEAM_APP + m.workshopId + '" title="Opens in the Steam app">' + esc(m.name) + '</a>';
+  return '<a href="' + WS + m.workshopId + '" target="_blank" rel="noopener">' + esc(m.name) + '</a>';
 }
 
 function renderCompare(mine, theirs, r, view){
@@ -391,7 +434,9 @@ function renderCompare(mine, theirs, r, view){
     '<div class="stat"><b class="c-move">' + r.moved.length + '</b><span>Different order</span></div></div>' +
     '<div class="bar"><button id="v-side" class="' + (view === "side" ? "on" : "") + '">Side by side</button>' +
     '<button id="v-sum" class="' + (view === "sum" ? "on" : "") + '">Summary only</button>' +
-    (r.missing.length ? '<button id="cp-miss">Copy missing links</button>' : '') + '</div>';
+    (r.missing.length ? '<button id="cp-miss">Copy missing links</button>' : '') + '</div>' +
+    '<div class="linkmode">Open links in <span class="seg"><button id="lm-steam" class="' + (linkMode() === "steam" ? "on" : "") + '">Steam app</button>' +
+    '<button id="lm-browser" class="' + (linkMode() === "browser" ? "on" : "") + '">Browser</button></span></div>';
 
   if (view === "side") {
     var col = function(title, list, state, side){
@@ -437,6 +482,8 @@ function wireCompare(mine){
     out.innerHTML = renderCompare(mine, last.theirs, last.r, view);
     $("v-side").onclick = function(){ view = "side"; draw(); };
     $("v-sum").onclick = function(){ view = "sum"; draw(); };
+    $("lm-steam").onclick = function(){ store(LINK_KEY, "steam"); draw(); };
+    $("lm-browser").onclick = function(){ store(LINK_KEY, "browser"); draw(); };
     var cm = $("cp-miss");
     if (cm) cm.onclick = function(){
       var lines = last.r.missing.map(function(i){ var t = last.theirs[i];
@@ -468,6 +515,89 @@ function wireCompare(mine){
   });
 }
 
+// ------------------------------------------------------- steam collection
+
+// Accepts a collection link (filedetails or managecollection) or a bare ID.
+function collectionId(text){
+  text = String(text || "").trim();
+  if (!text) return "";
+  var m = text.match(/[?&]id=(\d{5,})/) || text.match(/^(\d{5,})$/);
+  return m ? m[1] : null;
+}
+
+// One entry per Workshop item (mods sharing an item are grouped), sorted A to Z.
+function workshopItems(mods){
+  var byId = {}, items = [];
+  (mods || []).forEach(function(m){
+    if (!m.workshopId) return;
+    var it = byId[m.workshopId];
+    if (!it) { it = byId[m.workshopId] = { id: m.workshopId, names: [] }; items.push(it); }
+    if (it.names.indexOf(m.name) < 0) it.names.push(m.name);
+  });
+  items.forEach(function(it){ it.title = it.names[0]; });
+  items.sort(function(a, b){ return a.title.localeCompare(b.title, undefined, { sensitivity: "base", numeric: true }); });
+  return items;
+}
+
+function loadAdded(){ try { return JSON.parse(load(ADDED_KEY) || "{}") || {}; } catch (e) { return {}; } }
+function saveAdded(o){ store(ADDED_KEY, JSON.stringify(o)); }
+
+function collectionHtml(items, current){
+  var n = items.length;
+  var rows = items.map(function(it){
+    var sub = it.names.length > 1 ? '<small>One Workshop item, ' + it.names.length + ' mods: ' + esc(it.names.join(", ")) + '</small>' : '';
+    return '<label class="ckr" data-id="' + it.id + '"><input type="checkbox" data-id="' + it.id + '">' +
+      '<span class="nm">' + esc(it.title) + sub + '</span>' +
+      '<a class="wid" href="' + WS + it.id + '" target="_blank" rel="noopener">' + it.id + '</a></label>';
+  }).join('');
+  return '<div class="coll"><h3>Steam collection <span>optional, gives everyone a Subscribe to all button</span></h3>' +
+    '<div class="step"><span class="num">1</span><div class="body"><a class="btn" href="' + NEW_COLLECTION + '" target="_blank" rel="noopener">Create collection on Steam</a>' +
+      '<p class="hint">Set its visibility to <b>Unlisted</b> so it stays out of Workshop search but works for anyone with the link. Public also works.</p></div></div>' +
+    '<div class="step"><span class="num">2</span><div class="body">In Steam\'s editor, open <b>Add from your subscribed items</b>. Steam lists <b>all</b> your subscribed Project Zomboid items: click <b>Add</b> only on the ones in this list.' +
+      '<div class="bar" style="margin:8px 0 0"><button id="ck-show">Show my ' + n + ' items as a checklist</button><button id="ck-ids">Copy all Workshop IDs</button></div>' +
+      '<div class="ck" id="ck"><div class="ckh"><span id="ck-count"></span><div class="prog"><div id="ck-bar"></div></div><button id="ck-clear" style="font-size:12px;padding:2px 8px">Clear ticks</button></div><div class="ckrows">' + rows + '</div></div>' +
+      '<p class="hint">Ticks are only for keeping track. They\'re saved in this browser, and nothing is sent to Steam.</p></div></div>' +
+    '<div class="step"><span class="num">3</span><div class="body">Paste the collection link' +
+      '<div class="namerow"><input id="coll" type="text" placeholder="https://steamcommunity.com/sharedfiles/filedetails/?id=..." value="' + esc(current) + '"></div>' +
+      '<p class="err" id="coll-err" style="display:none">That doesn\'t look like a Steam collection link. Paste the address of your collection\'s page.</p>' +
+      '<p class="warn">Make sure your collection has exactly these ' + n + ' items. Extras would get subscribed for everyone who uses Subscribe to all.</p>' +
+      '<p class="hint">Remembered for next time. Leave empty to skip.</p></div></div></div>';
+}
+
+function wireCollection(items){
+  var added = loadAdded();
+  function refresh(){
+    var done = 0;
+    items.forEach(function(it){ if (added[it.id]) done++; });
+    $("ck-count").textContent = done + " of " + items.length + " added";
+    $("ck-bar").style.width = (items.length ? Math.round(done / items.length * 100) : 0) + "%";
+    Array.prototype.forEach.call(document.querySelectorAll("#ck .ckr"), function(row){
+      var on = !!added[row.getAttribute("data-id")];
+      row.classList.toggle("done", on);
+      row.querySelector("input").checked = on;
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll("#ck input"), function(cb){
+    cb.onchange = function(){ var id = cb.getAttribute("data-id"); if (cb.checked) added[id] = 1; else delete added[id]; saveAdded(added); refresh(); };
+  });
+  $("ck-clear").onclick = function(){ added = {}; saveAdded(added); refresh(); };
+  $("ck-show").onclick = function(){
+    var open = !$("ck").classList.contains("open");
+    $("ck").classList.toggle("open", open);
+    this.classList.toggle("on", open);
+  };
+  $("ck-ids").onclick = function(){ copyText(items.map(function(it){ return it.id; }).join(";"), $("ck-ids")); };
+  $("coll").oninput = function(){ $("coll-err").style.display = collectionId(this.value) === null ? "block" : "none"; };
+  refresh();
+}
+
+function bannerHtml(data){
+  if (!data.collection) return "";
+  return '<div class="banner"><a class="big" href="' + WS + data.collection + '" target="_blank" rel="noopener">Subscribe to all on Steam</a>' +
+    '<p>Opens this list\'s Steam collection (<a href="' + STEAM_APP + data.collection + '">open in the Steam app</a>). ' +
+    'Then in game, use <b>Import</b> with this list\'s import code to turn them on in the right order.</p></div>';
+}
+
 // ------------------------------------------------------------------ page
 
 var PANELS = { dlp: "dl", parts: "dc", cmp: "cm" };   // panel id -> its button
@@ -486,7 +616,9 @@ function show(data){
   document.title = title;
   var nameVal = data.title || load(NAME_KEY);
   var asIndex = load(INDEX_KEY) === "1";
-  $("app").innerHTML = '<h1 id="h1">' + esc(title) + '</h1><p class="sub">' + parts.sub + '</p>' +
+  var items = workshopItems(data.mods);
+  var collVal = data.collection ? WS + data.collection : load(COLL_KEY);
+  $("app").innerHTML = '<h1 id="h1">' + esc(title) + '</h1><p class="sub">' + parts.sub + '</p>' + bannerHtml(data) +
     '<div class="bar"><button id="dl">Download as .html</button><button id="dc">Copy for Discord</button>' +
     '<button id="ic">Copy import code</button><button id="cm">Compare</button></div>' +
     '<div class="panel" id="dlp"><h2>Download as .html</h2>' +
@@ -494,19 +626,25 @@ function show(data){
     '<div class="namerow"><input id="lname" type="text" maxlength="80" placeholder="' + DEFAULT_TITLE + '" value="' + esc(nameVal) + '"></div>' +
     '<label class="tick"><input type="checkbox" id="asidx"' + (asIndex ? ' checked' : '') + '><span>Save as <b>index.html</b> instead of ModList.html</span></label>' +
     '<p class="hint">Use index.html when uploading to a hosting site: the list then opens at your site\'s main address.</p>' +
-    '<div class="bar" style="margin:12px 0 0"><button id="dlgo">Download <span id="dlname"></span></button></div></div>' +
+    (items.length ? collectionHtml(items, collVal) : '') +
+    '<div class="bar" style="margin:16px 0 0"><button id="dlgo">Download <span id="dlname"></span></button></div></div>' +
     discordHtml(dparts) + compareHtml() + parts.list + parts.config;
   function fileName(){ return $("asidx").checked ? "index.html" : "ModList.html"; }
   function updateName(){ $("dlname").textContent = fileName(); }
   updateName();
   $("asidx").onchange = function(){ store(INDEX_KEY, this.checked ? "1" : "0"); updateName(); };
   $("dl").onclick = function(){ togglePanel("dlp"); if ($("dlp").classList.contains("open")) $("lname").focus(); };
+  if (items.length) wireCollection(items);
   $("dlgo").onclick = function(){
     var name = $("lname").value.trim();
+    var coll = $("coll") ? collectionId($("coll").value) : "";
+    if (coll === null) { $("coll-err").style.display = "block"; $("coll").focus(); return; }
     store(NAME_KEY, name);
+    if ($("coll")) store(COLL_KEY, coll ? WS + coll : "");
     var copy = {};
     for (var k in data) copy[k] = data[k];
     copy.title = name;
+    if (coll) copy.collection = coll; else delete copy.collection;
     download(copy, fileName());
   };
   $("ic").onclick = function(){ copyText(importCode(data), $("ic")); };
